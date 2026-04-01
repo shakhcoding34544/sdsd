@@ -5,10 +5,10 @@ import os
 import threading
 import time
 from datetime import datetime, timedelta
-TOKEN = "8452726962:AAF8uSwrGH-MgQbN2t-zqx6nCW3QzKaJl_A"
-MAIN_ADMIN_ID = 7176707054
+TOKEN = "8633492216:AAFxkmbxxEW2EbiAGDHNkZjQlJJbGvQIKKE"
+MAIN_ADMIN_ID = 8201674543
 DB_NAME = 'moviequi.db'
-
+# agar sizda moviequi (7).db fayli bo'lsa, undan foydalanamiz
 if os.path.exists('moviequi (7).db'):
     DB_NAME = 'moviequi (7).db'
     print("🔁 moviequi (7).db topildi, shu DB ishlatiladi")
@@ -252,7 +252,7 @@ def check_subscription(user_id):
     """Foydalanuvchi barcha faol kanallarga obuna bo'lganini tekshirish"""
     channels = get_active_channels()
     if not channels:
-        return True, []
+        return True, [], None
     
     conn = get_db()
     c = conn.cursor()
