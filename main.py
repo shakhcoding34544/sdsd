@@ -5,10 +5,10 @@ import os
 import threading
 import time
 from datetime import datetime, timedelta
-TOKEN = "8633492216:AAFxkmbxxEW2EbiAGDHNkZjQlJJbGvQIKKE"
-MAIN_ADMIN_ID = 8201674543
+TOKEN = "8452726962:AAF8uSwrGH-MgQbN2t-zqx6nCW3QzKaJl_A"
+MAIN_ADMIN_ID = 7176707054
 DB_NAME = 'moviequi.db'
-# agar sizda moviequi (7).db fayli bo'lsa, undan foydalanamiz
+
 if os.path.exists('moviequi (7).db'):
     DB_NAME = 'moviequi (7).db'
     print("🔁 moviequi (7).db topildi, shu DB ishlatiladi")
